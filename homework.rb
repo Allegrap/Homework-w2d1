@@ -57,5 +57,9 @@ class Team
   end
 
 
+  def change_coach_name(new_coach)
+    @coach = new_coach
+  end
+
 
 end

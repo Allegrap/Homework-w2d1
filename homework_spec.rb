@@ -53,6 +53,10 @@ class TestTeam<MiniTest::Test
     assert_equal("Joo", @team.coach)
   end
 
+  def test_change_coach_name
+    @team.change_coach_name("Wine")
+    assert_equal("Wine", @team.coach)
+  end
 
 
 end
