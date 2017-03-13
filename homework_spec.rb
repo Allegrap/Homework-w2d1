@@ -125,6 +125,13 @@ def test_list_book_information
       }}, @library.book_information("game_of_thrones"))
 end
 
+def test_rental_info
+  assert_equal({
+        student_name: "Chiara",
+        date: "24.2.1996"
+      }, @library.rental_info("silmarillion"))
+end
+
 
 
 
