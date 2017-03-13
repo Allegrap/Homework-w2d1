@@ -142,8 +142,16 @@ def test_add_book
       }}, @library.list_books.last)
 end
 
-
-
+def test_change_rental_details
+  @library.change_rental_details("game_of_thrones", "Chris", "12.12.12")
+  assert_equal({
+      title: "game_of_thrones",
+      rental_details: {
+        student_name: "Chris",
+        date: "12.12.12"
+      }
+    }, @library.list_books.last)
+end
 
 end
 
