@@ -132,6 +132,16 @@ def test_rental_info
       }, @library.rental_info("silmarillion"))
 end
 
+def test_add_book
+  @library.add_book("the_jungle_book")
+  assert_equal({
+      title: "the_jungle_book",
+      rental_details: {
+        student_name: "",
+        date: ""
+      }}, @library.list_books.last)
+end
+
 
 
 

@@ -98,6 +98,15 @@ def rental_info(title)
   end
 end
 
+def add_book(title)
+  @books.push({
+      title: "the_jungle_book",
+      rental_details: {
+        student_name: "",
+        date: ""
+      }})
+end
+
 
 
 end
