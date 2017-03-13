@@ -112,8 +112,17 @@ def setup
 end
 
 
-def list_books
+def test_list_books
   assert_equal(@books, @library.list_books)
+end
+
+def test_list_book_information
+  assert_equal({
+      title: "game_of_thrones",
+      rental_details: {
+        student_name: "Talitha",
+        date: "22.6.2006"
+      }}, @library.book_information("game_of_thrones"))
 end
 
 

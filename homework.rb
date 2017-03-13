@@ -82,6 +82,13 @@ def list_books
   return @books
 end
 
+def book_information(title)
+  for book in @books
+    if title == book[:title]
+      return book
+    end
+  end
+end
 
 
 end
