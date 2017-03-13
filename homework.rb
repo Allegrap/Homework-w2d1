@@ -60,4 +60,11 @@ class Team
     return false
   end
 
+  def win_result(result)
+    if result == "Win!"
+      @points += 10
+    end
+  end
+
+
 end
