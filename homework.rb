@@ -38,27 +38,12 @@ end
 
 class Team
 
+  attr_accessor :team_name, :players_array, :coach
+
   def initialize(team_name, players_array, coach)
     @team_name = team_name
     @players_array = players_array
     @coach = coach
-  end
-
-  def team_name
-    return @team_name
-  end
-
-  def players_array
-    return @players_array
-  end
-
-  def coach
-    return @coach
-  end
-
-
-  def change_coach_name(new_coach)
-    @coach = new_coach
   end
 
 
