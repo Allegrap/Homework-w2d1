@@ -19,5 +19,9 @@ class Student
     @student_name = new_name
   end
 
+  def talk
+    return "I can talk!"
+  end
+
 
 end
