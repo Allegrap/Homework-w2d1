@@ -4,7 +4,7 @@ require_relative('./homework')
 class TestStudent< MiniTest::Test
 
   def setup
-    @student = Student.new("Allegra", 11) 
+    @student = Student.new("Allegra", 11, "Ruby") 
   end
 
   def test_student_name
@@ -22,6 +22,10 @@ class TestStudent< MiniTest::Test
 
   def test_student_can_talk
     assert_equal("I can talk!", @student.talk)
+  end
+
+  def test_input_favourite_language
+    assert_equal("I love Ruby!", @student.favourite_language)
   end
 
 end
