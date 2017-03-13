@@ -63,5 +63,9 @@ class TestTeam<MiniTest::Test
     assert_equal(["Chris", "Chiara", "Talitha", "Allegra", "Kashka", "Shakira"], @team.players_array)
   end
 
+  def test_player_in_array?
+   result = @team.player_in_array?("Chris")
+   assert_equal(true, result)
+  end
 
 end

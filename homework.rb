@@ -50,4 +50,13 @@ class Team
     @players_array.push(player)
   end
 
+  def player_in_array?(player)
+    for person in @players_array
+      if player == person
+        return true
+      end
+    end
+    return false
+  end
+
 end
