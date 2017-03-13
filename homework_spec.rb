@@ -58,5 +58,10 @@ class TestTeam<MiniTest::Test
     assert_equal("Wine", @team.coach)
   end
 
+  def test_add_new_player
+    @team.add_to_players("Shakira")
+    assert_equal(["Chris", "Chiara", "Talitha", "Allegra", "Kashka", "Shakira"], @team.players_array)
+  end
+
 
 end

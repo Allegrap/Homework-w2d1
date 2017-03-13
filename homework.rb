@@ -46,5 +46,8 @@ class Team
     @coach = coach
   end
 
+  def add_to_players(player)
+    @players_array.push(player)
+  end
 
 end
