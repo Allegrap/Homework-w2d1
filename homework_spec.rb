@@ -38,7 +38,7 @@ end
 class TestTeam<MiniTest::Test
 
   def setup
-    @team = Team.new("Codeclan", ["Chris", "Chiara", "Talitha", "Allegra", "Kashka"], "Joo")
+    @team = Team.new("Codeclan", ["Chris", "Chiara", "Talitha", "Allegra", "Kashka"], "Joo", 0)
   end
 
   def test_team_name
