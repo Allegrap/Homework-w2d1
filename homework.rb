@@ -1,3 +1,5 @@
+#Part A
+
 class Student
 
 
@@ -26,6 +28,20 @@ class Student
 
   def favourite_language
     return "I love #{@language}!"
+  end
+
+end
+
+
+
+#Part B
+
+class Team
+
+  def initialize(team_name, players_array, coach)
+    @team_name = team_name
+    @players_array = players_array
+    @coach = coach
   end
 
 end

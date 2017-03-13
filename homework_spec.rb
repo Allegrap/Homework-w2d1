@@ -1,6 +1,8 @@
 require('minitest/autorun')
 require_relative('./homework')
 
+
+#Part A
 class TestStudent< MiniTest::Test
 
   def setup
@@ -27,5 +29,18 @@ class TestStudent< MiniTest::Test
   def test_input_favourite_language
     assert_equal("I love Ruby!", @student.favourite_language)
   end
+
+end
+
+
+#Part B
+
+class TestTeam<MiniTest::Test
+
+  def setup
+    @team = Team.new("Codeclan", ["Chris", "Chiara", "Talitha", "Allegra", "Kashka"], "Joo")
+  end
+
+
 
 end
