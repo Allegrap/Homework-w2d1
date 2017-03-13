@@ -73,3 +73,51 @@ class TestTeam<MiniTest::Test
     assert_equal(10, result)
   end
 end
+
+
+#Extension
+
+class TestLibrary<Minitest::Test
+
+def setup
+
+  @books = [
+
+    {
+      title: "the_night_manager",
+      rental_details: {
+        student_name: "Allegra",
+        date: "3.7.1994"
+      }
+    },
+
+    {
+      title: "silmarillion",
+      rental_details: {
+        student_name: "Chiara",
+        date: "24.2.1996"
+      }
+    },
+
+    {
+      title: "game_of_thrones",
+      rental_details: {
+        student_name: "Talitha",
+        date: "22.6.2006"
+      }
+    }
+  ]
+  @library = Library.new(@books)
+
+end
+
+
+def list_books
+  assert_equal(@books, @library.list_books)
+end
+
+
+
+
+end
+
