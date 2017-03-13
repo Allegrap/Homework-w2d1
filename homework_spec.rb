@@ -41,6 +41,18 @@ class TestTeam<MiniTest::Test
     @team = Team.new("Codeclan", ["Chris", "Chiara", "Talitha", "Allegra", "Kashka"], "Joo")
   end
 
+  def test_team_name
+    assert_equal("Codeclan", @team.team_name)
+  end
+
+  def test_players_array
+    assert_equal(["Chris", "Chiara", "Talitha", "Allegra", "Kashka"], @team.players_array)
+  end
+
+  def test_coach
+    assert_equal("Joo", @team.coach)
+  end
+
 
 
 end

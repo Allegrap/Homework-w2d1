@@ -44,4 +44,18 @@ class Team
     @coach = coach
   end
 
+  def team_name
+    return @team_name
+  end
+
+  def players_array
+    return @players_array
+  end
+
+  def coach
+    return @coach
+  end
+
+
+
 end
